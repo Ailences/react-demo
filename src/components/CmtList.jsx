@@ -18,8 +18,8 @@ export default class CmtList extends React.Component{
         }
     }
     render(){
-        return <div>
-            <h1>这是评论列表组件</h1>
+        return <div style={{width:'500px',margin:'50px auto'}}>
+            <h1 style={{color:'red',fontSize:'36px',fontWeight:200,textAlign:'center'}}>这是评论列表组件</h1>
             {this.state.CommentList.map(item =><CmtItem {...item} key={item.id}></CmtItem>)}
         </div>
     }

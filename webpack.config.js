@@ -18,6 +18,15 @@ module.exports = {
             test: /\.js|jsx$/,
             use: 'babel-loader',
             exclude: /node_modules/
+        }, {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
+        }, {
+            test: /\.less$/,
+            use: ['style-loader', 'css-loader?modules&localIdentName=[path][name]-[local]-[hash:5]', 'less-loader']
+        }, {
+            test: /\.ttf|woff|woff2|eot|svg$/,
+            use: 'url-loader'
         }]
     },
     resolve: {
