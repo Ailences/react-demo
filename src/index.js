@@ -2,13 +2,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// 导入BrandList 的配置文件
+import '@/brandlistconfig'
 // 导入 评论 组件
-import CmtList from '@/components/CmtList2'
+import BrandList from '@/components/BrandList'
 
-
-
-
-
-ReactDOM.render(<div>
-    <CmtList></CmtList>
-</div>, document.getElementById('app'))
+ReactDOM.render( <div>
+        <BrandList> </BrandList> 
+    </div> , document.getElementById('app'))
