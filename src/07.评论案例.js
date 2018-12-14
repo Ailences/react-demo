@@ -2,13 +2,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import fetchJSONP from 'fetch-jsonp'
-
-React.Component.prototype.$http = fetchJSONP
-
+// 导入BrandList 的配置文件
+import '@/brandlistconfig'
 // 导入 评论 组件
-import App from '@/components/App'
+import BrandList from '@/components/BrandList'
 
 ReactDOM.render( <div>
-        <App />
+        <BrandList> </BrandList> 
     </div> , document.getElementById('app'))
